@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.inline {
+    display: inline;
+}
+
 nav {
     display: flex;
 }
@@ -27,10 +31,21 @@ nav>a {
 }
 
 .photo-banner {
-    background-image: url(../assets/logo.jpg);
     background-position: center;
     background-size: cover;
     height: 480px;
+}
+
+.photo-1 {
+    background-image: url(../assets/1.jpg);
+}
+
+.photo-2 {
+    background-image: url(../assets/2.jpg);
+}
+
+.photo-3 {
+    background-image: url(../assets/3.png);
 }
 
 .profile-icon {
@@ -51,4 +66,18 @@ nav>a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* max-width akan menerapkan style di bawah ukuran yang di tentukan
+min-width akan menerapkan style di atas ukuran yang di tentukan */
+@media only screen and (max-width: 375px) {
+    .main-header {
+        flex-direction: column;
+    }
 }

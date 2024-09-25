@@ -28,14 +28,16 @@
         <!-- Home -->
         <section id="section-home">
             <header>
-                <h1>Hi User, Welcome to My Website</h1>
+                <h1 class="inline">Hi <h1 class="inline" id="user-name">User</h1>, Welcome to My Website</h1>
             </header>
 
             <article>
                 <p>Lorem Ipsum Dolor Sit Amet Adipiscing</p>
 
                 <!-- Photo Banner -->
-                <div class="photo-banner"></div>
+                <div class="photo-banner photo-1"></div>
+                <div class="photo-banner photo-2"></div>
+                <div class="photo-banner photo-3"></div>
             </article>
         </section>
 
@@ -77,12 +79,21 @@
                 <h1>Message Us</h1>
             </header>
 
-            <section>
+            <section class="form-container">
                 <!-- Form -->
-                <form></form>
+                <form onsubmit="return false;">
+                    <div>
+                        <label for="input-name">Nama:</label>
+                        <input type="text" id="input-name" />
+                    </div>
+
+                    <button type="submit" onclick="validateForm()">Submit</button>
+                </form>
 
                 <!-- Result Form -->
-                <div></div>
+                <div>
+                    <p>Result Form: <span id="result-form"></span></p>
+                </div>
             </section>
         </section>
     </main>
@@ -90,6 +101,8 @@
     <footer>
         <p>Made by Yama@2024</p>
     </footer>
+
+    <script src="js\script.js"></script>
 </body>
 
 </html>
